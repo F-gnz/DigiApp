@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DIGIMON! Digital Monsters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpg" href="assets/img/favicon agumon.jpg"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="container-fluid justify-content">
+    
+<!--Barra de Navegación-->
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top" id="miNav">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo1.png" alt="Bootstrap" width="auto" height="40" alt="Logo DIGIMON">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                    <li class="nav-item cabecera">
+                        <a class="nav-link active" aria-current="page" href="#noticias">Novedades</a>
+                    </li>
+                    <li class="nav-item cabecera">
+                        <a class="nav-link" href="#digiLista">Lista de Digimon</a>
+                    </li>
+                    <li class="nav-item cabecera">
+                        <a class="nav-link" href="#trailer">Trailers</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex cabecera">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item dropdown cabecera">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Enlaces
+                        </a>
+                        <ul class="dropdown-menu cabecera dropdw text-center">
+                          <li><a class="dropdown-item" href="https://wikimon.net/">Wikimon</a></li>
+                          <li><a class="dropdown-item" href="https://www.youtube.com/@BANDAICARDGAMES">Youtube Bandai card games</a></li>
+                          <li><a class="dropdown-item" href="https://www.youtube.com/playlist?list=PLMpZlrItsV_m47iY8nSI2dZKoV_En6r3V">Youtube BANDAI Digimon Survive</a></li>
+                        </ul>
+                </div>
+                <form class="d-none d-lg-flex" role="search" id="form">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Digimon" aria-label="Search" id="character">
+                    <button type="submit" id="boton"><img src="assets/img/tai.png" height ="50" width="auto" /></button>
+                </form
+            </nav>
+        </div>
+    </div>
+<!--Cuerpo de la página-->
+    <section class="container-fluid text-center mt-3">
+            <div class="row" id="fondoMusica">
+                <div class="col">
+                    <img src="assets/img/cancion.png" alt="Palmon cantando" class="col-12 mx-auto mb-2 mt-5 pt-3" id="palmon" >
+                    <audio controls autoplay loop>
+                        <source src="assets/audio/Op Digimon Adventure.mp3" autostart="true" type="audio/mp3">
+                            Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+            </div>
+            <h1 class="fs-1 mb-4 mt-5 mb-5">...BIENVENIDO AL DIGIMUNDO!</h1>
+
+<!--Modal-->
+
+        <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="nodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modalHead">
+                <button type="button" class="btn-close miExit" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+<!--Título tarjetas-->
+
+        <div class="container text-center" >
+            <div class="row justify-content-lg-center mt-5">
+                <div class="col ">
+                    <h2 class="fs-1 mb-2 text-info" id="noticias"> Novedades:</h2>
+                </div>
+            </div>
+        </div>
+
+<!-- Tarjeta 1: DIGIMON TCG-->
+        <div class="container text-center" >
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mt-5" style="width:100%;">
+                        <a href="https://world.digimoncard.com/"><img src="assets/img/tcg.webp" class="card-img-top" alt="Digimon TCG"></a>
+                        <div class="card-body">
+                        <h5 class="FS-4">¡El juego de cartas coleccionables más esperado en Latinoamérica ha arribado!</h5>
+                        <p class="card-text">Tamers, DIGIMON TCG ya llego a latinoamérica y se está situando como uno de los más jugados. Visita la página oficial.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+<!--Tarjeta 2: Videojuegos-->
+
+                <div class="col-lg-4">
+                    <div class="card mt-5" style="width:100%">
+                        <a href="https://es.bandainamcoent.eu/digimon/digimon-survive"><img src="assets/img/survive.webp" class="card-img-top" alt="Imagen Digimon Survive"></a>
+                        <div class="card-body">
+                        <h5 class="FS-4">DIGIMON: Survive</h5>
+                        <p class="card-text">El videojuego pertenece al género Novela Visual y rol táctico. Fue desarrollado por Witchcraft y Bandai Namco Games para las plataformas de PlayStation 4, Xbox One, Nintendo Switch y PC.</p>
+                        </div>
+                    </div>
+                </div>
+
+<!--Tarjeta 3: Anime Ghost game-->
+
+                <div class="col-lg-4">
+                    <div class="card mt-5 mb-5" style="width:100%;">
+                        <a href="https://www.crunchyroll.com/es/series/G5PHNMEEZ/digimon-ghost-game"><img src="assets/img/anime.png" class="card-img-top" alt="Cervezas"></a>
+                        <div class="card-body">
+                        <h5 class="FS-4">DIGIMON: Ghost Game</h5>
+                        <p class="card-text">El anime de Digimon Ghost Game terminó con su episodio 68, emitido el 28 de Marzo del 2023 en Japón y distribuido a nivel mundial por la plataforma de streaming Crunchyroll.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!--titulo de la lista-->
+        <div class="row justify-content-lg-center" id="digiLista">
+            <div class="col ">
+                <h2 class="fs-1 mb-4 text-info"> Lista de Digimon:</h2>
+            </div>
+        </div>
+    </section>
+<!--Lista de Digimon-->
+    <div class="miContainer">
+        <div id="salida">
+        </div>
+    </div>
+<!--titulo Trailers-->
+<div class="container text-center" >
+    <div class="row justify-content-lg-center">
+        <div class="col ">
+            <h2 class="fs-1 text-info mb-4" id="trailer"> Trailers:</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row justify-content-lg-center">
+        <div class="col-md-12 ">
+                <iframe width="450" height="300"  id="trailers" src="https://www.youtube.com/embed/sWHZqj79gAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row justify-content-lg-center mt-5 mb-5">
+        <div class="col-md-12 ">
+            <iframe width="450" height="300" id="trailers" src="https://www.youtube.com/embed/HtCOXu6zauk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--titulo de la Galería-->
+    <div class="container text-center d-none d-lg-block" >
+        <div class="row justify-content-lg-center">
+            <div class="col ">
+                <h2 class="fs-1 text-info mb-4" id="galeria"> Galería:</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- Gallería -->
+<div class="row d-none d-lg-flex" >
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <img
+        src="assets/img/fondo1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="assets/img/imagen1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="assets/img/vertical.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="assets/img/Digimon-Survive-1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="assets/img/amigos.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="assets/img/monomon.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+
+<!--Pie de página-->
+
+    <div class="row ">
+        <div class="col container-fluid mt-3">
+            <footer class="text-center" id="pie">
+                <p>Todos los derechos reservados &reg;</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/JS/logic.js"></script>
+  </body>
+</html>
